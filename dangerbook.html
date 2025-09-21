@@ -5,42 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="dangerbookcss.css">
+    <meta http-equiv="refresh" content="2">
     <link rel="icon" href="imagenes/logostudiodanger.png" type="image/png">
-    <meta http-equiv="refresh" content="3">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <div class="bg-dark text-light py-1">
-        <div class="container d-flex justify-content-between">
-            <span>📞 +56 9 9080 7035</span>
-            <div>
-                <a href="#" class="text-light me-3">Login</a>
-                <a href="registro.html" class="text-light">Registro</a>
-            </div>
-        </div>
-    </div>
-    <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand">
-                <img id="logonavbar" src="imagenes/logostudiodanger.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">StudioDanger
-            </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            
+            <div class="d-flex align-items-center gap-3 collapse navbar-collapse">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="imagenes/logostudiodanger.png" alt="Logo" width="50" height="44" class="me-2">
+                    <span class="fw-bold">StudioDanger</span>
+                </a>
+                <a href="#" class="text-light nav-link px-2">Login</a>
+                <a href="registro.html" class="text-light nav-link px-2">Registro</a>
+                <a href="https://www.instagram.com/studiodanger_/" target="_blank">
+                    <img src="imagenes/logo-instagram.png" alt="Instagram" class="logo-instagram ">
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <!-- ms-auto hace que empuje hacia la derecha -->
-                <div class="navbar-nav ms-auto">
-                <a class="nav-link active" aria-current="page" href="dangerbook.html">Inicio</a>
-                <a class="nav-link" href="#">Servicios y Precios</a>
-                <a class="nav-link" href="#">Locales</a>
-                <a class="nav-link" href="#">Calificaciones</a>
-              </div>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Servicios y Precios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
             </div>
         </div>
     </nav>
-
+    
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/corte1.jpg" class="d-block w-100" alt="Primera imagen">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/miau.jpg" class="d-block w-100" alt="Segunda imagen">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/cortesfichas.jpg" class="d-block w-100" alt="Tercera imagen">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
