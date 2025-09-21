@@ -11,57 +11,45 @@
     <link rel="icon" href="imagenes/logostudiodanger.png" type="image/png">
 </head>
 <body>
-
-  <header>
-    <img src="imagenes/logostudiodanger.png" width="150" height="auto">
-  </header>
-    <div class="container mt-5 mb-5">
+  <div class="container mt-5 mb-5">
     <h2 class="text-center mb-4">DangerBook</h2>
-    <p id="titulo" class="text-center mb-4">Bienvenido a DangerBook. Regístrese para comenzar</p>
     <div class="row justify-content-center">
       <div class="col-md-8">
-       
           <div class="abs-center">
             <form class="form" id="form" action="">
-                <div>
-                  <div class="form-input nombre">
-                    <label for="nombre">Nombre Completo</label> 
-                    <input type="text" id="nombre">
-                    <p class="mensajeError"></p>
+              <div>
+                <p id="titulo" class="text-center mb-4">Bienvenido a DangerBook. Regístrese para comenzar</p>
+                <div class="form-input nombre">
+                  <label for="nombre">Nombre Completo</label> 
+                  <input type="text" id="nombre">
+                  <p class="mensajeError"></p>
                 </div>         
                 <div class="form-input correo">
                   <label for="nombre">Correo</label>
                   <input type="text" id="correo">
                   <p class="mensajeError"></p>
-              </div>             
-                   <div class="form-input telefono">
-                       <label for="nombre">Telefono</label>
-                       <input type="text" id="telefono">
-                       <p class="mensajeError"></p>
-                   </div>
-                   <div class="form-input contrasena">
-                        <label for="nombre">Contraseña</label> 
-                        <input type="text" id="contrasena">
-                        <p class="mensajeError"></p>
-                    </div>
-                   <div class="form-input rol">
-                       <label for="nombre_usu">Rol (Usuario, Barbero, Administrador)</label>
-                       <input type="text" id="rol">
-                       <p class="mensajeError"></p>
-                   
-              
+                </div>             
+                <div class="form-input telefono">
+                  <label for="nombre">Telefono</label>
+                  <input type="text" id="telefono">
+                  <p class="mensajeError"></p>
                 </div>
-    
-                
-                <input type="submit" class="btn btn-primary" value="Enviar" onclick="validar()" >
+                <div class="form-input contrasena">
+                  <label for="nombre">Contraseña</label> 
+                  <input type="text" id="contrasena">
+                  <p class="mensajeError"></p>
+                </div>
+                <div class="form-input rol">
+                  <label for="nombre_usu">Rol (Usuario, Barbero, Administrador)</label>
+                  <input type="text" id="rol">
+                  <p class="mensajeError"></p>
+                </div>
+              <input type="submit" class="btn btn-primary" value="Enviar" onclick="validar()">
     
     
             </form>
-    
-    
-        </div>
+          </div>
         <script type="text/javascript" src="loginjava.js"></script>
-
       </div>
     </div>
   </div>
