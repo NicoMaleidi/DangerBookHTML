@@ -1,4 +1,3 @@
-
 /*Variables*/
 var telefono = document.getElementById("telefono");
 var nombre=document.getElementById("nombre");
@@ -47,8 +46,8 @@ function validar(){
         todoOk = false;
     }
     /*Telefono*/
-    if (telefono.value.length < 8 || telefono.value.length > 12) {
-        mostrarMensajeError("telefono", "El teléfono debe tener entre 8 y 12 números y no puede contener letras.");
+    if (telefono.value.length < 7 || telefono.value.length > 12) {
+        mostrarMensajeError("telefono", "El número de teléfono debe tener entre 8 a 12 caracteres y no puede contener letras.");
         todoOk = false;
     }
     /*Contrasena*/
@@ -76,8 +75,6 @@ function validar(){
 
 /* funcion que muestra el mensaje de error en las validaciones */
 function mostrarMensajeError(ClaseInput, mensaje){
-
-        let elemeto = document.querySelector(`.${ClaseInput}`);
-        elemeto.lastElementChild.innerHTML = mensaje;
-        
-   }
+    let elemeto = document.querySelector(`.${ClaseInput}`);
+    elemeto.lastElementChild.innerHTML = mensaje;
+}
