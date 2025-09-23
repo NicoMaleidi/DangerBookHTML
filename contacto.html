@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DangerBook - Contacto</title>
+    <link rel="stylesheet" href="contactocss.css">
+    <link rel="icon" href="imagenes/logostudiodanger.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            
+            <div class="d-flex align-items-center gap-3 collapse navbar-collapse">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="imagenes/logostudiodanger.png" alt="Logo" width="50" height="44" class="me-2">
+                    <span class="fw-bold">StudioDanger</span>
+                </a>
+                <a href="#" class="text-light nav-link px-2" id="navbarUser">Login</a>
+                <a href="registro.html" class="text-light nav-link px-2">Registro</a>
+                <a href="https://www.instagram.com/studiodanger_/" target="_blank">
+                    <img src="imagenes/logo-instagram.png" alt="Instagram" class="logo-instagram ">
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="dangerbook.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="serviciosyprecios.html">Servicios y Precios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5 mb-5">
+        <h2 class="text-center mb-4 text-light">Contáctanos</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <div class="card bg-dark text-light p-4 shadow">
+                    <form id="contactForm">
+                        <p class="text-center mb-4">Déjanos tu mensaje y te responderemos lo antes posible.</p>
+
+                        <div class="form-input mb-3">
+                            <label for="nombre" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre completo" required>
+                            <small class="mensajeError"></small>
+                        </div>
+
+                        <div class="form-input mb-3">
+                            <label for="correo" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo" required>
+                            <small class="mensajeError"></small>
+                        </div>
+
+                        <div class="form-input mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono" required>
+                            <small class="mensajeError"></small>
+                        </div>
+                    
+                        <div class="form-input mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                            <small class="mensajeError"></small>
+                        </div>
+
+                        <div class="d-flex justify-content-between gap-3">
+                            <button type="submit" class="btn btn-warning flex-grow-1 fw-bold">Enviar</button>
+                            <button type="button" class="btn btn-secondary flex-grow-1" onclick="window.location.href='dangerbook.html'">Volver</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const nombreUsuario = localStorage.getItem("usuarioNombre");
+        const navbarUser = document.getElementById("navbarUser");
+        const navbarRegister = document.getElementById("navbarRegister");
+
+        if (nombreUsuario) {
+            navbarUser.textContent = `Hola, ${nombreUsuario}`;
+            navbarUser.href = "#";
+            if(navbarRegister) {
+                navbarRegister.style.display = "none";
+            }
+        } else {
+            navbarUser.textContent = "Login";
+            navbarUser.href = "login.html";
+        }
+    });
+    </script>
+    <script src="contactojava.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

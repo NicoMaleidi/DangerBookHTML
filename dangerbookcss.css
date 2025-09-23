@@ -41,7 +41,21 @@
 }
 
 #carouselExample .carousel-inner img {
-    width: 100%;
-    height: 400px; 
-    object-fit: cover;
+  width: 100%;
+  height: 400px;     
+  object-fit: cover;
+}
+
+
+#nosotros h2 {
+  color: #FFD54F; /* dorado como tu navbar */
+}
+
+.card img, .card video {
+  width: 100%;
+  height: 450px;         /* todas con el mismo alto */
+  object-fit: cover;     /* recorta sin deformar */
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  align-items: center;
 }
