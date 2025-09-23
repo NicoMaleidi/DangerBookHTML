@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@
 .logo-instagram {
     width: 30px;
     height: 30px;
-    filter: brightness(1.2); /* Slightly brighter for better visibility */
+    filter: brightness(1.2);
     transition: transform 0.2s ease;
 }
 
@@ -17,7 +17,7 @@
     transform: translateY(-2px);
 }
 
-/* Navbar Styles */
+/* Navbar*/
 .navbar .nav-link {
     color: #FFD54F !important;
     font-weight: 500;
@@ -25,7 +25,7 @@
 }
 
 .navbar .nav-link:hover {
-    color: #FFC107 !important; /* Slightly darker yellow for hover */
+    color: #FFC107 !important;
     transform: translateY(-2px);
 }
 
@@ -39,13 +39,13 @@
     transform: scale(1.05);
 }
 
-/* Form Title */
+/* Titulo */
 h2 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 2rem;
     font-weight: bold;
-    color: #FFD54F; /* Match theme color */
+    color: #FFD54F;
     letter-spacing: 1px;
 }
 
@@ -57,7 +57,7 @@ label {
     color: #FFD54F;
 }
 
-/* Inputs and Select */
+/* Inputs y Select */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -80,7 +80,7 @@ select:focus {
     box-shadow: 0 0 8px rgba(255, 213, 79, 0.5);
 }
 
-/* Buttons */
+/* Botones */
 .btn-primary {
     padding: 12px;
     background: #FFD54F;
@@ -115,7 +115,7 @@ select:focus {
     transform: scale(1.03);
 }
 
-/* Error Messages */
+/* Mensajes de error */
 .mensajeError {
     color: #ff4d4d;
     font-size: 12px;
@@ -123,7 +123,6 @@ select:focus {
     min-height: 14px;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 576px) {
     h2 {
         font-size: 1.5rem;
